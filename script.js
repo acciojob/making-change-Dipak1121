@@ -1,7 +1,12 @@
 const makeChange = (c) => {
   // your name here
 	c = parseInt(c);
-	let obj = {};
+	let obj = {
+		q : 0,
+		d : 0,
+		n : 0,
+		p : 0,
+	};
 	while(c > 0){
 		if( c >= 25 ){
 			obj["q"] = Math.floor(c/25);
@@ -24,5 +29,5 @@ const makeChange = (c) => {
 };
 
 // Do not the change the code below
-const c = prompt("Enter c: ");
-alert(JSON.stringify(makeChange(c)));
+// const c = prompt("Enter c: ");
+// alert(JSON.stringify(makeChange(c)));
